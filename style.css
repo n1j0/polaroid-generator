@@ -1,0 +1,67 @@
+body {
+    background-color: white;
+    font-family: 'Arial', 'sans serif', serif;
+    overflow: hidden;
+}
+
+.canvasWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.imageUploadForm_wrapper {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    background-color: #DDF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+.imageUploadForm {
+    display: block;
+    margin: 0 auto 1em auto;
+    cursor: pointer;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    font-size: 50px;
+    /*Opacity settings for all browsers*/
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0)
+}
+
+canvas {
+    max-height: 90vh;
+    width: auto;
+    max-width: 100vw;
+}
+
+div#dropzone {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999999;
+    width: 100%;
+    height: 100%;
+    transition: visibility 175ms, opacity 175ms;
+    display: table;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+div#textnode {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    transition: font-size 175ms;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Polaroid Generator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="canvasWrapper">
+    <div class="imageUploadForm_wrapper">
+        <span>Choose image</span>
+        <input type="file" id="imageLoader" name="imageLoader" class="imageUploadForm"/>
+    </div>
+    <button id="downloadButton">Download</button>
+    <canvas id="imageCanvas"></canvas>
+</div>
+
+<div id="dropzone">
+    <div id="textnode">Drop anywhere!</div>
+</div>
+
+<script src="./main.js" type="module"></script>
+</body>
+</html>
